@@ -102,13 +102,18 @@ const quotes = [
  * `getRandomQuote` function
 ***/
 
+const getRandomQuote = (quotes) => {
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
+  return quote;
+};
 
+const quote = getRandomQuote(quotes);
 
 /***
  * `printQuote` function
 ***/
 
-
+console.log(quote);
 
 /***
  * click event listener for the print quote button
